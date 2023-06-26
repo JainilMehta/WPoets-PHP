@@ -1,0 +1,184 @@
+body {
+    background-color: #11324d;
+    font-family:'Titillium Web', sans-serif;
+}
+
+.header{
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h4 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 1%;
+    margin-bottom: 0;
+    font-weight: 200;
+}
+
+.buttons {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5vh;
+    width: 100%;
+}
+
+.buttons button{
+    display: flex;
+    align-items: center;
+    margin: 5px 5px; 
+    margin-right: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 0;
+    width: 90vw;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.plus , .minus.active {
+    width: 30px;
+    padding-right: 0;
+    position: absolute;
+    padding-left: 75%;
+}
+
+.minus.deactive , .plus.deactive{
+    display:none;
+}
+
+button img{
+    width: 40px;
+    height: 40px;
+    padding-right: 40px;
+    padding-left: 0;
+}
+
+.arrow-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrow-top.active {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #64b4c8;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+.content{
+    width: 94%;
+    background-color: #64b4c8;
+    margin:5px 0 5px 5px;
+}
+
+.content-text.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-text.active p{
+    color: white;
+    padding: 0px 10px;
+    font-size: 12px;
+    background-color:  rgba(0,0,0,0.2); ;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+
+.content-text.active h2{
+    color: white;
+    margin: 0px;
+}
+
+.content-text.active h4, .content-text.active img{
+    padding-left: 10px;
+    margin-bottom: 50px;
+    display: inline-flex;
+    color: white;
+    filter: brightness(0) invert(1);
+}
+
+#learning-text.content-text.active
+{
+    background-image: url("images/DL-Learning-1.jpg");
+    opacity: 0.4;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#technology-text.content-text.active
+{
+    background: url("images/DL-Technology.jpg");
+    opacity: 0.4;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#communication-text.content-text.active
+{
+    background: url("images/DL-Communication.jpg");
+    opacity: 0.4;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-text{
+    display: none;
+}
+
+.content input{
+    display: none;
+}
+
+.navigation.active{
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -40px; 
+}
+
+.navigation{
+    display: none;
+}
+
+.manual-btn{
+    border: 1.6px solid #d4d3d8;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    height: 0;
+    width: 0;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 12px;
+}
+
+.manual-btn.active{
+    background: #d4d3d8 ;
+}
+ 
